@@ -78,6 +78,17 @@
   nav.eras a{flex:0 0 auto;text-decoration:none;color:var(--ink-soft);border:1px solid var(--line);background:var(--card);
     border-radius:999px;padding:5px 14px;font-size:13.5px;font-family:"Hiragino Sans","Yu Gothic",sans-serif}
   nav.eras a:hover{border-color:var(--sea);color:var(--sea)}
+  .era-select-wrap{display:flex;align-items:center;gap:6px;flex:0 0 auto;font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13.5px;color:var(--ink-soft)}
+  .era-select{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13.5px;color:var(--ink);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 10px;max-width:220px}
+  .era-select:focus{outline:2px solid var(--sea);outline-offset:1px}
+  .era-filter{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 30px 14px;margin:26px 0}
+  @media(max-width:600px){.era-filter{padding:20px 18px 10px}}
+  .era-filter h2{font-size:19px;margin:0 0 8px;color:var(--sea-deep)}
+  .era-filter p{margin:0 0 12px;font-size:15px}
+  .era-filter label{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:14px;display:block}
+  .era-select-main{display:block;width:100%;max-width:520px;margin-top:8px;border-radius:8px;padding:10px 12px;font-size:15px}
+  .filter-status{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13px;color:var(--accent);margin-top:10px!important}
+  section.era[hidden]{display:none!important}
   main{max-width:780px;margin:0 auto;padding:8px 20px 24px}
   section.era{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:30px 30px 12px;margin:26px 0}
   @media(max-width:600px){section.era{padding:24px 18px 8px}}
@@ -115,12 +126,17 @@
 </header>
 
 <nav class="eras" aria-label="時代区分">
-  <a href="#amami-yo">奄美世</a>
-  <a href="#aji-yo">按司世</a>
-  <a href="#naha-yo">那覇世</a>
-  <a href="#yamato-yo">大和世</a>
+  <label class="era-select-wrap" for="eraSelectNav"><span>〇〇世で選ぶ</span>
+    <select id="eraSelectNav" class="era-select" aria-label="〇〇世を選んで絞り込む">
+      <option value="">すべての〇〇世</option>
+      <option value="amami-yo">奄美世</option>
+      <option value="aji-yo">按司世</option>
+      <option value="naha-yo">那覇世</option>
+      <option value="yamato-yo">大和世</option>
+      <option value="america-yo">アメリカ世</option>
+    </select>
+  </label>
   <a href="#meiji">明治〜敗戦</a>
-  <a href="#america-yo">アメリカ世</a>
   <a href="#modern">復帰〜現代</a>
   <a href="#identity">奄美の心</a>
   <a href="#timeline">年表</a>
@@ -128,6 +144,22 @@
 </nav>
 
 <main>
+
+<div class="era-filter" role="region" aria-label="時代の絞り込み">
+  <h2>〇〇世を一つの項目に絞る</h2>
+  <p>読みたい時代をプルダウンで選ぶと、その「〇〇世」の章だけを表示します。「すべての〇〇世」を選ぶと全章が戻ります。</p>
+  <label for="eraSelectMain">時代（〇〇世）を選ぶ
+    <select id="eraSelectMain" class="era-select era-select-main" aria-label="〇〇世を選んで絞り込む">
+      <option value="">すべての〇〇世（全章表示）</option>
+      <option value="amami-yo">奄美世 ― 先史〜9世紀ごろ</option>
+      <option value="aji-yo">按司世 ― 9世紀ごろ〜15世紀</option>
+      <option value="naha-yo">那覇世 ― 1429年〜1609年</option>
+      <option value="yamato-yo">大和世 ― 1609年〜1868年</option>
+      <option value="america-yo">アメリカ世 ― 1945年〜1953年</option>
+    </select>
+  </label>
+  <p class="filter-status" id="eraFilterStatus" aria-live="polite">現在：すべての時代を表示しています</p>
+</div>
 
 <section class="era" id="amami-yo">
   <div class="era-head"><span class="era-no">第1章</span><h2>奄美世 ―― 貝の道が結んだ島々</h2><span class="era-years">先史〜9世紀ごろ</span></div>
@@ -232,5 +264,27 @@
   <p>お問い合わせ：<a href="mailto:ponponkonkon4@gmail.com">ponponkonkon4@gmail.com</a></p>
 </footer>
 
+<script>
+(function(){
+  var selects=[document.getElementById('eraSelectNav'),document.getElementById('eraSelectMain')].filter(Boolean);
+  var status=document.getElementById('eraFilterStatus');
+  var labels={'':'すべての時代','amami-yo':'奄美世','aji-yo':'按司世','naha-yo':'那覇世','yamato-yo':'大和世','america-yo':'アメリカ世'};
+  function apply(value,scroll){
+    selects.forEach(function(s){s.value=value;});
+    document.querySelectorAll('section.era').forEach(function(sec){
+      sec.hidden = !!value && sec.id!==value;
+    });
+    if(status){status.textContent = value ? '現在：'+(labels[value]||value)+'のみを表示しています（他の章は隠れています）' : '現在：すべての時代を表示しています';}
+    if(value && scroll){
+      var el=document.getElementById(value);
+      if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}
+    }
+  }
+  selects.forEach(function(s){s.addEventListener('change',function(){apply(s.value,true);});});
+  document.querySelectorAll('nav.eras a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(){apply('',false);});
+  });
+})();
+</script>
 </body>
 </html>
