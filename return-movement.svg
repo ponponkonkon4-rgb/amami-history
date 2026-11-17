@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-labelledby="title desc">
+<title id="title">図解：島民が勝ち取った日本復帰 ― アメリカ世の復帰運動</title>
+<desc id="desc">1946年の行政分離から、1951年の日本復帰協議会結成と泉芳朗の断食祈願、14歳以上の島民の99.8パーセントが署名したと伝えられる運動を経て、1953年12月25日に日本復帰を果たすまでの流れを示す図。左に署名率のドーナツ図、右に年表を示す。</desc>
+<rect width="1000" height="580" fill="#fbf9f4"/>
+<rect x="0" y="0" width="1000" height="120" fill="#083f4d"/>
+<text x="500" y="55" text-anchor="middle" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="38" font-weight="bold" fill="#fdfcf8">図解：島民が勝ち取った日本復帰</text>
+<text x="500" y="92" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" fill="#cfe3dd">アメリカ世 ― 復帰運動から1953年12月25日へ（第6章より）</text>
+<circle cx="200" cy="315" r="105" fill="none" stroke="#e9e0cd" stroke-width="34"/>
+<circle cx="200" cy="315" r="105" fill="none" stroke="#0d5c63" stroke-width="34" stroke-dasharray="658.5 659.7" transform="rotate(-90 200 315)"/>
+<text x="200" y="312" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="46" font-weight="bold" fill="#083f4d">99.8%</text>
+<text x="200" y="348" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="19" fill="#43536a">署名した割合</text>
+<text x="200" y="470" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="19" fill="#1d2733">14歳以上の島民の署名率</text>
+<text x="200" y="498" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="17" fill="#43536a">（約3か月で集まったと伝えられます）</text>
+<line x1="430" y1="175" x2="430" y2="475" stroke="#0d5c63" stroke-width="5"/>
+<circle cx="430" cy="185" r="13" fill="#8c5a2b"/>
+<text x="465" y="180" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" font-weight="bold" fill="#b7791f">1946年</text>
+<text x="465" y="208" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" fill="#1d2733">本土から行政分離、米軍統治が始まる（通貨はB円）</text>
+<circle cx="430" cy="255" r="13" fill="#8c5a2b"/>
+<text x="465" y="250" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" font-weight="bold" fill="#b7791f">1951年2月14日</text>
+<text x="465" y="278" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" fill="#1d2733">日本復帰協議会が結成（議長：泉芳朗）</text>
+<circle cx="430" cy="325" r="13" fill="#8c5a2b"/>
+<text x="465" y="320" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" font-weight="bold" fill="#b7791f">1951年8月1日</text>
+<text x="465" y="348" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" fill="#1d2733">泉芳朗が高千穂神社で120時間の断食祈願</text>
+<circle cx="430" cy="395" r="13" fill="#8c5a2b"/>
+<text x="465" y="390" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" font-weight="bold" fill="#b7791f">1953年8月8日</text>
+<text x="465" y="418" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" fill="#1d2733">ダレス米国務長官が奄美群島の返還を声明</text>
+<circle cx="430" cy="465" r="15" fill="#b7791f"/>
+<text x="465" y="460" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" font-weight="bold" fill="#083f4d">1953年12月25日 午前0時</text>
+<text x="465" y="490" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="21" fill="#1d2733">奄美群島が日本へ復帰（沖縄より19年早く）</text>
+<text x="500" y="550" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="18" fill="#43536a">内容は本サイト第6章「アメリカ世」に基づきます ／ 運営：太郎JAPAN</text>
+</svg>

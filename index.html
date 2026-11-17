@@ -151,6 +151,20 @@
   .overview-figure img{display:block;width:100%;height:auto;border:1px solid var(--sand);border-radius:8px;background:#fbf9f4}
   .overview-figure figcaption{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13.5px;color:var(--ink-soft);margin-top:10px;line-height:1.8}
   .overview-figure figcaption a{font-size:13.5px}
+
+  .hero-visual{display:block;width:min(560px,92%);height:auto;margin:22px auto 4px}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:720px;margin:18px auto 2px}
+  .hero-stat{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:10px;padding:10px 14px;min-width:128px}
+  .hero-stat b{display:block;font-size:21px;line-height:1.35;color:#ffd98a;font-family:"Hiragino Sans","Yu Gothic",sans-serif}
+  .hero-stat span{font-size:12.5px;color:#e7efe9;font-family:"Hiragino Sans","Yu Gothic",sans-serif}
+  .journey{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+  .journey a{flex:1 1 118px;text-decoration:none;border-radius:10px;padding:12px 10px 10px;color:#fff;font-family:"Hiragino Sans","Yu Gothic",sans-serif;text-align:center;line-height:1.5}
+  .journey a b{display:block;font-size:16.5px}
+  .journey a span{font-size:12px;opacity:.92}
+  .journey a:hover{filter:brightness(1.12)}
+  .diagram-figure{margin:18px 0 8px}
+  .diagram-figure img{display:block;width:100%;height:auto;border:1px solid var(--sand);border-radius:8px;background:#fbf9f4}
+  .diagram-figure figcaption{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13.5px;color:var(--ink-soft);margin-top:10px;line-height:1.8}
 </style>
 </head>
 <body>
@@ -161,7 +175,22 @@
   <h1>奄美大島の歴史<br>――那覇世・大和世を生きた島の五千年</h1>
   <p class="sub">琉球に属し、薩摩に支配され、アメリカに切り離され、それでも島であり続けた物語</p>
   <p class="updated">最終更新日：2026年11月18日</p>
-  <p class="lead">奄美の人々は、自分たちの歴史を支配者の名で呼んできた。共同体の時代「奄美世（アマンユー）」、首長たちの時代「按司世（アジユー）」、琉球王国に属した「那覇世（ナハユー）」、薩摩藩に組み込まれた「大和世（ヤマトユー）」。この呼び名の重なりそのものが、奄美が常に大きな力の境界に立ち続けた島であることを物語っている。本稿では、その歩みを時代ごとにたどる。</p>
+  <p class="lead">支配者の名で時代を呼ぶ島――五つの「〇〇世」でたどる、五千年の物語。まずは図で全体像を。</p>
+  <svg class="hero-visual" viewBox="0 0 560 150" role="img" aria-label="奄美大島のイメージイラスト：海と島、サトウキビとアマミノクロウサギ">
+    <circle cx="478" cy="34" r="20" fill="#ffd98a"/>
+    <path d="M0 108 Q70 92 140 108 T280 108 T420 108 T560 108 V150 H0 Z" fill="#0a4a52"/>
+    <path d="M0 122 Q70 108 140 122 T280 122 T420 122 T560 122 V150 H0 Z" fill="#083f4d"/>
+    <path d="M150 108 Q280 38 410 108 Z" fill="#2e7d5f"/>
+    <path d="M205 108 Q280 62 355 108 Z" fill="#3f9973"/>
+    <g stroke="#7ac74f" stroke-width="4" stroke-linecap="round"><path d="M120 108 V62"/><path d="M120 74 Q104 62 96 48"/><path d="M120 70 Q136 58 144 44"/><path d="M138 108 V70"/><path d="M138 80 Q126 70 120 58"/><path d="M138 78 Q150 68 156 54"/></g>
+    <g fill="#1d2733"><ellipse cx="438" cy="98" rx="17" ry="10"/><circle cx="452" cy="90" r="7"/><path d="M449 84 L447 68 L453 82 Z"/><path d="M455 84 L457 68 L459 83 Z"/></g>
+  </svg>
+  <div class="hero-stats" aria-label="奄美大島の歴史の要点">
+    <div class="hero-stat"><b>約5,000年</b><span>貝塚の時代からの通史</span></div>
+    <div class="hero-stat"><b>7つの時代</b><span>奄美世から現代まで</span></div>
+    <div class="hero-stat"><b>1953.12.25</b><span>島民が勝ち取った日本復帰</span></div>
+    <div class="hero-stat"><b>2021年</b><span>ユネスコ世界自然遺産に登録</span></div>
+  </div>
 </header>
 
 <nav class="eras" aria-label="時代区分">
@@ -188,9 +217,27 @@
 
 <main>
 
+<section class="panel" id="visual-start">
+  <h2>まずは図で見る ― 30秒で全体像</h2>
+  <p>文章の前に、図で流れを掴む入口です。気になった図から本文へ進めます。</p>
+  <nav class="journey" aria-label="時代の流れ">
+    <a href="#amami-yo" style="background:#5a8a72"><b>奄美世</b><span>先史〜9世紀</span></a>
+    <a href="#aji-yo" style="background:#0d5c63"><b>按司世</b><span>9世紀〜15世紀</span></a>
+    <a href="#naha-yo" style="background:#2a7a9b"><b>那覇世</b><span>1429〜1609</span></a>
+    <a href="#yamato-yo" style="background:#b7791f"><b>大和世</b><span>1609〜1868</span></a>
+    <a href="#america-yo" style="background:#8c5a2b"><b>アメリカ世</b><span>1945〜1953</span></a>
+    <a href="#modern" style="background:#083f4d"><b>現代</b><span>世界自然遺産へ</span></a>
+  </nav>
+  <div class="cards">
+    <div class="card-item"><h3>通史を1枚で</h3><p>五つの「〇〇世」と帰属の変化を縦の年表で。</p><a href="#overview">イメージ図へ</a></div>
+    <div class="card-item"><h3>黒糖はどこへ行ったのか</h3><p>専売の仕組みを流れ図で（第4章）。</p><a href="#sugar-diagram">黒糖の図解へ</a></div>
+    <div class="card-item"><h3>99.8%の署名と復帰</h3><p>復帰運動をドーナツ図と年表で（第6章）。</p><a href="#return-diagram">復帰の図解へ</a></div>
+  </div>
+</section>
+
 <div class="era-filter" role="region" aria-label="時代の絞り込み">
   <h2>〇〇世を一つの項目に絞る</h2>
-  <p>読みたい時代をプルダウンで選ぶと、その「〇〇世」の章だけを表示します。「すべての〇〇世」を選ぶと全章が戻ります。</p>
+  <p>プルダウンで選ぶと、その時代の章だけを表示します。</p>
   <label for="eraSelectMain">時代（〇〇世）を選ぶ
     <select id="eraSelectMain" class="era-select era-select-main" aria-label="〇〇世を選んで絞り込む">
       <option value="">すべての〇〇世（全章表示）</option>
@@ -206,7 +253,7 @@
 
 <section class="panel" id="overview">
   <h2>イメージ図 ― 五つの「〇〇世」でたどる五千年</h2>
-  <p>奄美大島の通史を1枚にまとめた図解です。時代ごとに「帰属」と代表的な出来事を示しました。帰属が変わるたびに島の暮らしも変わりましたが、結い・島唄・大島紬に代表される島の文化は受け継がれてきました。</p>
+  <p>通史を1枚にまとめた図解です。時代ごとの「帰属」と代表的な出来事を示しました。</p>
   <figure class="overview-figure">
     <img src="history-overview.svg" alt="奄美大島の歴史イメージ図：奄美世（貝交易・共同体）、按司世（首長・グスク）、那覇世（琉球王国への編入）、大和世（薩摩支配と黒糖専売、西郷隆盛の龍郷潜居）、明治〜敗戦（鹿児島県）、アメリカ世（米軍統治と1953年12月25日の日本復帰）、復帰〜現代（世界自然遺産）までを縦の年表で示した図" width="1000" height="1560" loading="lazy">
     <figcaption>図：奄美世から現代までの流れ。内容は本サイト本文に基づきます。画像だけを大きく見る場合は <a href="history-overview.svg">イメージ図（SVG）を開く</a> からご覧ください。</figcaption>
@@ -247,6 +294,10 @@
 <section class="era" id="yamato-yo">
   <div class="era-head"><span class="era-no">第4章</span><h2>大和世 ―― 薩摩の直轄と黒糖の時代</h2><span class="era-years">1609年〜1868年</span></div>
   <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約3分</p><ul><li>1611年、奄美群島は薩摩藩の蔵入地となり、表向き琉球・実質薩摩の二重の帰属が始まった</li><li>換糖上納令と惣買入制による黒糖専売は「黒糖地獄」と呼ばれ、島民は蘇鉄地獄にも苦しんだ</li><li>西郷隆盛が1859年から龍郷に潜居し、愛加那と結婚したのもこの時代</li></ul></div>
+  <figure class="diagram-figure" id="sugar-diagram">
+    <img src="sugar-flow.svg" alt="図解：黒糖はどこへ行ったのか。島民が生産した黒糖は惣買入制で薩摩藩が独占的に買い上げ、大阪の問屋へ卸され、藩の財政再建に充てられた。島民への対価は羽書だったことを示す流れ図" width="1000" height="560" loading="lazy">
+    <figcaption>図解：黒糖専売の仕組み。詳しくは下の本文へ。図だけを大きく見る場合は <a href="sugar-flow.svg">黒糖の図解（SVG）を開く</a> からご覧ください。</figcaption>
+  </figure>
   <p>1609年（慶長14年）、薩摩藩は琉球へ侵攻した。目的は対明貿易の利潤と藩財政の立て直しだった。1611年（慶長16年）、奄美群島は正式に琉球から割譲され、薩摩藩の領土（蔵入地）となる。ただし対外的には「琉球の内」と装うことが求められた。奄美はここから約260年、表向き琉球、実質は薩摩という二重の帰属を背負うことになる。1623年には「鬼界島置目条々」により統治方針が示され、代官（仮屋）を頂点とする支配体制が固められた。1801年には藩の出先機関である仮屋が名瀬に移転し、名瀬は奄美支配の拠点として発展していく。</p>
   <p>支配の核心となったのが砂糖である。元禄年間（1690年代）に薩摩藩は沖縄から製糖技術を導入し、1695年には製糖の監督にあたる「黍検者（きびけんじゃ）」を島に派遣した。そして1745年（延享2年）の「換糖上納令」――資料によっては1747年のこととするものもある――で、年貢を米ではなく黒糖に換算して納める制度が始まる。稲作からサトウキビへの転作が一気に進み、島の食糧自給は崩れていった。</p>
   <p>さらに1830年（文政13年・天保元年）には「惣買入制（そうかいいれせい）」が敷かれる。生産した黒糖の私売は禁じられ、納税分を除く余りの黒糖は藩が独占的に、しかも安値で買い上げた。買い上げの対価は現金ではなく、割高な食料・日用品と引き換える「羽書（はがき）」と呼ばれる商品券的な仕組みだった。黒糖は大阪の問屋に卸され、その超過利潤は、約500万両ともいわれる薩摩藩の借財返済と財政再建の柱となった。弘化元年（1844年）には藩の借財は解消され備蓄まで生まれたとされるが、その陰で島民は飢饉のたびに毒抜きを要する蘇鉄（そてつ）の実や幹を食べて命をつなぐ「蘇鉄地獄」に苦しんだ。密売には死罪が科された時代もあった。この過酷な黒糖専売の時代は、後に「黒糖地獄（砂糖地獄）」と呼ばれる。</p>
@@ -263,6 +314,10 @@
 <section class="era" id="america-yo">
   <div class="era-head"><span class="era-no">第6章</span><h2>アメリカ世 ―― 8年間の分離と、島民が勝ち取った復帰</h2><span class="era-years">1945年〜1953年</span></div>
   <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約2分</p><ul><li>1946年、本土から行政分離され米軍統治が始まり、通貨はB円、物資は不足した</li><li>泉芳朗らの復帰運動は、14歳以上の島民の99.8%の署名と断食祈願へ広がった</li><li>1953年12月25日午前0時、奄美群島は日本へ復帰した</li></ul></div>
+  <figure class="diagram-figure" id="return-diagram">
+    <img src="return-movement.svg" alt="図解：島民が勝ち取った日本復帰。14歳以上の島民の99.8パーセントの署名、泉芳朗の断食祈願を経て、1953年12月25日に日本復帰を果たすまでの流れを示す図" width="1000" height="580" loading="lazy">
+    <figcaption>図解：復帰運動から日本復帰まで。詳しくは下の本文へ。図だけを大きく見る場合は <a href="return-movement.svg">復帰の図解（SVG）を開く</a> からご覧ください。</figcaption>
+  </figure>
   <p>第二次世界大戦の敗戦後、1946年、GHQの指令により北緯30度以南の島々は日本本土から行政分離され、奄美群島は米軍の統治下に置かれた（この時代を「アメリカ世」と呼ぶこともある）。本土との往来は断たれ、通貨はB円となり、物資と食糧は不足した。軍事的価値の乏しい奄美は、物資も資金も沖縄に集中する中で取り残された、と当時を回顧する声は多い。</p>
   <p>だが島民は沈黙しなかった。1951年2月14日、「奄美大島日本復帰協議会」が結成され、徳之島出身の詩人・泉芳朗が議長に就いた。署名運動は約3か月で、当時の14歳以上の島民の99.8%の署名を集めたと伝えられる。同年8月1日、泉は名瀬の高千穂神社にこもり、120時間（5日間）の断食祈願を決行。詩「断食悲願」にその決意を刻んだこの行動は群島各地に広がり、復帰運動は非暴力のまま全島一丸の運動へと高まっていく。</p>
   <p>1953年8月8日、来日したダレス米国務長官が奄美群島の返還声明を発表。そして1953年12月25日午前0時、奄美群島は正式に日本へ復帰した。クリスマスの日に帰ってきた島々――この日は今も奄美で最も大切な記念日の一つであり、名瀬のおがみ山公園には復帰記念碑と泉芳朗の胸像・詩碑が立つ。住民自身の運動が帰属を動かしたこの復帰は、19年後の沖縄復帰に先立つものでもあった。</p>
