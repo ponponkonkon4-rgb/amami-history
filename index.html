@@ -13,7 +13,10 @@
 <meta property="og:title" content="奄美大島の歴史｜那覇世・大和世を生きた島の五千年">
 <meta property="og:description" content="琉球王国の那覇世、薩摩支配と黒糖地獄の大和世、1953年12月25日の日本復帰、2021年世界自然遺産登録まで。奄美大島の歴史を時代ごとに深掘りする。">
 <meta property="og:url" content="https://ponponkonkon4-rgb.github.io/amami-history/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://ponponkonkon4-rgb.github.io/amami-history/ogp.svg">
+<meta property="article:modified_time" content="2026-11-18">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ponponkonkon4-rgb.github.io/amami-history/ogp.svg">
 <meta name="twitter:title" content="奄美大島の歴史｜那覇世・大和世を生きた島の五千年">
 <meta name="twitter:description" content="薩摩支配・黒糖地獄から1953年日本復帰、世界自然遺産まで。地元の時代呼称でたどる奄美大島の通史。">
 <script type="application/ld+json">
@@ -25,6 +28,7 @@
   "inLanguage": "ja",
   "author": { "@type": "Organization", "name": "太郎JAPAN", "email": "ponponkonkon4@gmail.com" },
   "datePublished": "2026-11-17",
+  "dateModified": "2026-11-18",
   "about": { "@type": "Place", "name": "奄美大島" }
 }
 </script>
@@ -52,6 +56,16 @@
       "@type": "Question",
       "name": "奄美大島が世界自然遺産に登録されたのはいつですか？",
       "acceptedAnswer": { "@type": "Answer", "text": "2021年7月26日です。奄美大島と徳之島が、沖縄島北部・西表島とともにユネスコの世界自然遺産に登録されました。アマミノクロウサギに代表される固有種の豊かな生物相が評価されました。" }
+    },
+    {
+      "@type": "Question",
+      "name": "「アメリカ世」とは何ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "第二次世界大戦後、1945年から1953年の日本復帰まで、奄美群島が米軍統治下に置かれた時代を指す地元の呼び名です。本土との往来は断たれ、通貨はB円となりました。島民の復帰運動を経て、1953年12月25日に日本へ復帰しました。" }
+    },
+    {
+      "@type": "Question",
+      "name": "奄美大島の日本復帰はなぜ12月25日だったのですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "1953年8月8日、来日したダレス米国務長官が奄美群島の返還声明を発表し、同年12月25日午前0時、奄美群島は正式に日本へ復帰しました。クリスマスの日に帰ってきた島々――この日は今も奄美で最も大切な記念日の一つです。" }
     }
   ]
 }
@@ -114,14 +128,35 @@
     font-family:"Hiragino Sans","Yu Gothic",sans-serif}
   footer p{margin:4px 0}
   footer a{color:#ffd98a}
+  #readingProgress{position:fixed;top:0;left:0;height:4px;background:var(--accent);width:0;z-index:50}
+  .updated{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13px;color:#cfe3dd;margin:14px 0 0}
+  .chapter-summary{background:#f6f1e3;border:1px solid var(--sand);border-radius:8px;padding:14px 18px 8px;margin:0 0 18px}
+  .chapter-summary p{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13px;color:var(--accent);margin:0 0 6px!important;font-weight:600}
+  .chapter-summary ul{margin:0 0 8px;padding-left:20px;font-size:15px}
+  .chapter-summary li{margin:2px 0}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px 30px;margin:26px 0}
+  @media(max-width:600px){.panel{padding:22px 18px}}
+  .panel h2{font-size:21px;margin:0 0 10px}
+  .panel>p{font-size:15.5px;margin:0 0 14px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px}
+  .card-item{border:1px solid var(--sand);border-radius:8px;padding:14px 16px;background:#fffdf7}
+  .card-item h3{font-size:16px;margin:0 0 6px;color:var(--sea-deep)}
+  .card-item p{font-size:14px;margin:0;line-height:1.8}
+  .card-item a{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13px}
+  .timeline .row[hidden]{display:none!important}
+  .timeline-status{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13px;color:var(--accent)}
+  .theme-btn{cursor:pointer;text-align:left;font:inherit;width:100%}
+  .theme-btn:hover{border-color:var(--sea)}
 </style>
 </head>
 <body>
+<div id="readingProgress" aria-hidden="true"></div>
 
 <header class="hero">
   <p class="kicker">AMAMI OSHIMA HISTORY</p>
   <h1>奄美大島の歴史<br>――那覇世・大和世を生きた島の五千年</h1>
   <p class="sub">琉球に属し、薩摩に支配され、アメリカに切り離され、それでも島であり続けた物語</p>
+  <p class="updated">最終更新日：2026年11月18日</p>
   <p class="lead">奄美の人々は、自分たちの歴史を支配者の名で呼んできた。共同体の時代「奄美世（アマンユー）」、首長たちの時代「按司世（アジユー）」、琉球王国に属した「那覇世（ナハユー）」、薩摩藩に組み込まれた「大和世（ヤマトユー）」。この呼び名の重なりそのものが、奄美が常に大きな力の境界に立ち続けた島であることを物語っている。本稿では、その歩みを時代ごとにたどる。</p>
 </header>
 
@@ -139,7 +174,10 @@
   <a href="#meiji">明治〜敗戦</a>
   <a href="#modern">復帰〜現代</a>
   <a href="#identity">奄美の心</a>
+  <a href="#themes">テーマ別</a>
   <a href="#timeline">年表</a>
+  <a href="#cards">人物・用語</a>
+  <a href="#spots">史跡リスト</a>
   <a href="#faq">よくある質問</a>
 </nav>
 
@@ -161,26 +199,40 @@
   <p class="filter-status" id="eraFilterStatus" aria-live="polite">現在：すべての時代を表示しています</p>
 </div>
 
+<section class="panel" id="themes">
+  <h2>テーマ別に読む</h2>
+  <p>関心のあるテーマから入る入口です。選ぶと関係の深い章へ移動します（「〇〇世」の絞り込みと連動するテーマもあります）。</p>
+  <div class="cards">
+    <button type="button" class="card-item theme-btn" data-theme-era="yamato-yo"><h3>黒糖</h3><p>換糖上納令と惣買入制、「黒糖地獄」と呼ばれた専売の時代、そして黒糖焼酎への転回まで。第4章「大和世」を絞り込んで表示します。</p></button>
+    <button type="button" class="card-item theme-btn" data-theme-target="yamato-yo"><h3>島唄と大島紬</h3><p>過酷な支配の下で歌い継がれた島唄と、年貢や換金の手段にもなった大島紬。第4章「大和世」の文化の記述へ移動します。</p></button>
+    <button type="button" class="card-item theme-btn" data-theme-target="modern"><h3>世界自然遺産</h3><p>アマミノクロウサギに代表される固有種の豊かさが評価され、2021年に登録。第7章「復帰から現代」へ移動します。</p></button>
+  </div>
+</section>
+
 <section class="era" id="amami-yo">
   <div class="era-head"><span class="era-no">第1章</span><h2>奄美世 ―― 貝の道が結んだ島々</h2><span class="era-years">先史〜9世紀ごろ</span></div>
+  <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約1分</p><ul><li>ゴホウラ（巻貝）の交易で、九州と南の島々を結ぶ「海の道」の中継点だった</li><li>御嶽（うたき）を中心に集落（シマ）が形づくられ、血縁を基盤に助け合う社会だった</li><li>階級社会以前の村落共同体の時代を、地元では「奄美世」と呼ぶ</li></ul></div>
   <p>奄美群島の人の営みは、約6,000〜5,000年前の縄文時代にまで遡る。喜界島の赤連遺跡や中里貝塚など、各地に貝塚が残されている。この時代の奄美を特徴づけるのは「貝の交易」である。沖縄方面で採れるゴホウラ（巻貝）は腕輪などの装身具の素材として珍重され、奄美は九州と南の島々を結ぶ交易の中継点だった。いわば奄美は、太古から「海の道」の結節点だったのである。</p>
   <p>古代に入ると、奄美は日本の律令国家の視野にも入ってくる。『日本書紀』などに現れる南島への言及が奄美を指すとする説があり、8世紀には遣唐使船の寄港・補給の島としても位置づけられたとされる。ただし824年（天長元年）、多禰国が大宰府の所管から大隅国に移されると本土との公的な交流は細り、島は次第に独自の歩みを強めていく。この、階級社会以前の村落共同体の時代を、地元では「奄美世」と呼ぶ。御嶽（うたき）を中心に集落（シマ）が形づくられ、男性が行政を、女性が祭祀を担い、血縁を基盤に助け合う社会だった。</p>
 </section>
 
 <section class="era" id="aji-yo">
   <div class="era-head"><span class="era-no">第2章</span><h2>按司世 ―― 首長たちの時代</h2><span class="era-years">9世紀ごろ〜15世紀</span></div>
+  <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約1分</p><ul><li>在地の首長・按司（アジ）が各地で勢力を蓄え、階級社会が形成された</li><li>山頂や台地に城（グスク）が築かれ、赤木名城跡などが面影を残す</li><li>沖縄本島の三山統一と琉球王国の成立へつながっていく時代</li></ul></div>
   <p>8〜9世紀以降、在地の首長である按司（アジ）が各地で勢力を蓄え、階級社会が形成されていく。これが「按司世」である。喜界島の百之台は、全島の按司たちが集まって会議を開いた場所と伝えられる。奄美大島でも山頂や台地の上に城（グスク）が築かれるようになり、赤木名城跡（奄美市笠利町）などがその面影を残す。</p>
   <p>この頃、沖縄本島では按司たちが北山・中山・南山の三勢力に統合されつつあった。奄美の島々もその影響圏に組み込まれていき、やがて中山が三山を統一して琉球王国が成立すると、奄美の編入が段階的に進む。</p>
 </section>
 
 <section class="era" id="naha-yo">
   <div class="era-head"><span class="era-no">第3章</span><h2>那覇世 ―― 琉球王国の時代</h2><span class="era-years">1429年〜1609年</span></div>
+  <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約1分</p><ul><li>1429年から1466年にかけて、奄美群島は段階的に琉球王国へ編入された</li><li>「間切（まぎり）」による間接支配が行われ、ノロ（祝女）の制度が根づいた</li><li>喜界島は10年以上抗戦したが、1466年に尚徳王の親征で陥落した</li></ul></div>
   <p>奄美群島の琉球王国への編入は、一度ではなく段階的に進んだ。1429年に沖永良部島と与論島が王国の領土となり、1447年には奄美大島が統治下に入った。最後まで残ったのが喜界島である。南海交易の利権を持つ喜界島は財力・武力ともに強く、琉球軍の攻撃に10年以上抗戦したが、1466年、第七代尚徳王自らが兵2,000余・兵船50余艘を率いて遠征し、ついに陥落した。琉球王国の正史『球陽』には、たび重なる遠征の失敗に王が怒り、親征を決意した経緯が記されている。</p>
   <p>こうして奄美群島全域が琉球王国の領土となり、「那覇世」が始まる。王国は各島を「間切（まぎり）」に行政区分し、島出身の役人を登用する間接支配を行った。1446年には農産物の年貢納入や城・道路造りの夫役が命じられている。この時代に、集落の祭祀を司るノロ（祝女）の制度が王府の公的な制度として奄美にも根づき、奄美の精神文化の骨格が形づくられた。</p>
 </section>
 
 <section class="era" id="yamato-yo">
   <div class="era-head"><span class="era-no">第4章</span><h2>大和世 ―― 薩摩の直轄と黒糖の時代</h2><span class="era-years">1609年〜1868年</span></div>
+  <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約3分</p><ul><li>1611年、奄美群島は薩摩藩の蔵入地となり、表向き琉球・実質薩摩の二重の帰属が始まった</li><li>換糖上納令と惣買入制による黒糖専売は「黒糖地獄」と呼ばれ、島民は蘇鉄地獄にも苦しんだ</li><li>西郷隆盛が1859年から龍郷に潜居し、愛加那と結婚したのもこの時代</li></ul></div>
   <p>1609年（慶長14年）、薩摩藩は琉球へ侵攻した。目的は対明貿易の利潤と藩財政の立て直しだった。1611年（慶長16年）、奄美群島は正式に琉球から割譲され、薩摩藩の領土（蔵入地）となる。ただし対外的には「琉球の内」と装うことが求められた。奄美はここから約260年、表向き琉球、実質は薩摩という二重の帰属を背負うことになる。1623年には「鬼界島置目条々」により統治方針が示され、代官（仮屋）を頂点とする支配体制が固められた。1801年には藩の出先機関である仮屋が名瀬に移転し、名瀬は奄美支配の拠点として発展していく。</p>
   <p>支配の核心となったのが砂糖である。元禄年間（1690年代）に薩摩藩は沖縄から製糖技術を導入し、1695年には製糖の監督にあたる「黍検者（きびけんじゃ）」を島に派遣した。そして1745年（延享2年）の「換糖上納令」――資料によっては1747年のこととするものもある――で、年貢を米ではなく黒糖に換算して納める制度が始まる。稲作からサトウキビへの転作が一気に進み、島の食糧自給は崩れていった。</p>
   <p>さらに1830年（文政13年・天保元年）には「惣買入制（そうかいいれせい）」が敷かれる。生産した黒糖の私売は禁じられ、納税分を除く余りの黒糖は藩が独占的に、しかも安値で買い上げた。買い上げの対価は現金ではなく、割高な食料・日用品と引き換える「羽書（はがき）」と呼ばれる商品券的な仕組みだった。黒糖は大阪の問屋に卸され、その超過利潤は、約500万両ともいわれる薩摩藩の借財返済と財政再建の柱となった。弘化元年（1844年）には藩の借財は解消され備蓄まで生まれたとされるが、その陰で島民は飢饉のたびに毒抜きを要する蘇鉄（そてつ）の実や幹を食べて命をつなぐ「蘇鉄地獄」に苦しんだ。密売には死罪が科された時代もあった。この過酷な黒糖専売の時代は、後に「黒糖地獄（砂糖地獄）」と呼ばれる。</p>
@@ -190,11 +242,13 @@
 
 <section class="era" id="meiji">
   <div class="era-head"><span class="era-no">第5章</span><h2>明治から敗戦まで ―― 県政下でも続いた砂糖の構図</h2><span class="era-years">1868年〜1945年</span></div>
+  <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約1分</p><ul><li>1879年に大島郡が置かれ、奄美群島は鹿児島県の行政下に正式に組み込まれた</li><li>黒糖の専売体制は「大島商社」に形を変えて引き継がれた</li><li>産業は大島紬と砂糖への依存が続き、軍事拠点としても位置づけられた</li></ul></div>
   <p>明治維新と廃藩置県を経て、1879年（明治12年）4月、奄美群島に大島郡が置かれ、鹿児島県の行政下に正式に組み込まれた。しかし黒糖の専売体制は、県が設立した専売公社「大島商社」に形を変えて引き継がれ、不公正な取引の構図はすぐには改まらなかった。島の産業は大島紬と砂糖への依存が続き、昭和に入ると奄美大島は本土防衛の軍事拠点としても位置づけられ、戦時体制の圧迫を受けることになる。</p>
 </section>
 
 <section class="era" id="america-yo">
   <div class="era-head"><span class="era-no">第6章</span><h2>アメリカ世 ―― 8年間の分離と、島民が勝ち取った復帰</h2><span class="era-years">1945年〜1953年</span></div>
+  <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約2分</p><ul><li>1946年、本土から行政分離され米軍統治が始まり、通貨はB円、物資は不足した</li><li>泉芳朗らの復帰運動は、14歳以上の島民の99.8%の署名と断食祈願へ広がった</li><li>1953年12月25日午前0時、奄美群島は日本へ復帰した</li></ul></div>
   <p>第二次世界大戦の敗戦後、1946年、GHQの指令により北緯30度以南の島々は日本本土から行政分離され、奄美群島は米軍の統治下に置かれた（この時代を「アメリカ世」と呼ぶこともある）。本土との往来は断たれ、通貨はB円となり、物資と食糧は不足した。軍事的価値の乏しい奄美は、物資も資金も沖縄に集中する中で取り残された、と当時を回顧する声は多い。</p>
   <p>だが島民は沈黙しなかった。1951年2月14日、「奄美大島日本復帰協議会」が結成され、徳之島出身の詩人・泉芳朗が議長に就いた。署名運動は約3か月で、当時の14歳以上の島民の99.8%の署名を集めたと伝えられる。同年8月1日、泉は名瀬の高千穂神社にこもり、120時間（5日間）の断食祈願を決行。詩「断食悲願」にその決意を刻んだこの行動は群島各地に広がり、復帰運動は非暴力のまま全島一丸の運動へと高まっていく。</p>
   <p>1953年8月8日、来日したダレス米国務長官が奄美群島の返還声明を発表。そして1953年12月25日午前0時、奄美群島は正式に日本へ復帰した。クリスマスの日に帰ってきた島々――この日は今も奄美で最も大切な記念日の一つであり、名瀬のおがみ山公園には復帰記念碑と泉芳朗の胸像・詩碑が立つ。住民自身の運動が帰属を動かしたこの復帰は、19年後の沖縄復帰に先立つものでもあった。</p>
@@ -202,39 +256,81 @@
 
 <section class="era" id="modern">
   <div class="era-head"><span class="era-no">第7章</span><h2>復帰から現代 ―― 振興法、黒糖焼酎、そして世界自然遺産</h2><span class="era-years">1954年〜</span></div>
+  <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約1分</p><ul><li>1954年に復興特別措置法が制定され、社会基盤の整備が進んだ</li><li>奄美群島でのみ製造が認められる黒糖焼酎の生産もこの頃始まった</li><li>2021年7月26日、ユネスコの世界自然遺産に登録された</li></ul></div>
   <p>復帰の翌1954年、「奄美群島復興特別措置法」（現在の奄美群島振興開発特別措置法）が制定され、港湾・道路など社会基盤の整備が国の支援のもとで進められた。復帰直後には、酒税法上の特例により奄美群島でのみ製造が認められる黒糖焼酎の生産も始まっている。かつて島を苦しめた黒糖が、今度は島だけに許された特産品へと姿を変えたことは、奄美史の皮肉な転回と言えるだろう。</p>
   <p>2017年には奄美群島国立公園が誕生し、2021年7月26日、奄美大島と徳之島は沖縄島北部・西表島とともにユネスコの世界自然遺産に登録された。アマミノクロウサギに代表される固有種の豊かさ――大陸とつながり、離れ、島として独自の進化を遂げた生物相――が評価されたものである。島が「境界」であり続けた地理そのものが、今度は世界の宝として認められた。</p>
 </section>
 
 <section class="era" id="identity">
   <div class="era-head"><span class="era-no">終章</span><h2>奄美のアイデンティティ ―― 境界に生きるということ</h2><span class="era-years"></span></div>
+  <div class="chapter-summary"><p>この章の3行まとめ ・ 読了目安 約1分</p><ul><li>奄美の歴史を貫くのは「どこにも完全には属さなかった」という経験</li><li>結い・ノロとユタ・島唄と大島紬が、自らの足場を内部につくり続けた</li><li>99.8%の署名と断食で復帰を勝ち取った1953年の記憶が、その到達点</li></ul></div>
   <p>奄美の歴史を貫くのは、「どこにも完全には属さなかった」という経験である。琉球に属しながら薩摩に支配され、日本に属しながら8年間切り離された。そのたびに島民は、与えられた帰属をただ受け入れるのではなく、結いの共同体、ノロとユタの信仰、島唄と大島紬の文化によって自らの足場を内部につくり続けてきた。99.8%の署名と断食で復帰を勝ち取った1953年の記憶は、その到達点である。</p>
   <p>本土でも沖縄でもない場所に立ち続けたこと。それが奄美の弱さではなく、しなやかな強さの源泉なのだと思う。奄美世から数えて五千年あまり、この島の歴史は今も、島に暮らす人々の日々の中で続いている。</p>
 </section>
 
 <section class="timeline" id="timeline">
   <h2>奄美大島の歴史 年表</h2>
+  <p class="timeline-status" id="timelineFilterStatus" aria-live="polite">上のプルダウンで「〇〇世」を選ぶと、年表もその時代の出来事だけに絞り込まれます。</p>
   <dl>
-    <div class="row"><dt>約6000〜5000年前</dt><dd>縄文時代の貝塚文化。ゴホウラ交易の中継点に</dd></div>
-    <div class="row"><dt>824年</dt><dd>多禰国が大隅国へ移管。本土との公的交流が細る</dd></div>
-    <div class="row"><dt>1429年</dt><dd>沖永良部島・与論島が琉球王国の領土に</dd></div>
-    <div class="row"><dt>1447年</dt><dd>奄美大島が琉球王国の統治下に入る</dd></div>
-    <div class="row"><dt>1466年</dt><dd>尚徳王が喜界島へ親征。奄美群島全域が琉球領に</dd></div>
-    <div class="row"><dt>1609年</dt><dd>薩摩藩が琉球へ侵攻</dd></div>
-    <div class="row"><dt>1611年</dt><dd>奄美群島が琉球から割譲され、薩摩藩の蔵入地に</dd></div>
-    <div class="row"><dt>1695年</dt><dd>製糖監督の「黍検者」が島に派遣される</dd></div>
-    <div class="row"><dt>1745年（諸説あり）</dt><dd>換糖上納令。年貢を黒糖で納める制度が始まる</dd></div>
-    <div class="row"><dt>1801年</dt><dd>薩摩藩の仮屋が名瀬へ移転</dd></div>
-    <div class="row"><dt>1830年</dt><dd>惣買入制。黒糖の私売禁止と藩の独占買上げ（黒糖地獄）</dd></div>
-    <div class="row"><dt>1859〜1862年</dt><dd>西郷隆盛が龍郷に潜居。愛加那と結婚</dd></div>
-    <div class="row"><dt>1879年</dt><dd>大島郡が置かれ、鹿児島県の行政下に</dd></div>
-    <div class="row"><dt>1946年</dt><dd>北緯30度以南が行政分離。米軍統治が始まる</dd></div>
-    <div class="row"><dt>1951年</dt><dd>日本復帰協議会が結成。泉芳朗の断食祈願</dd></div>
-    <div class="row"><dt>1953年12月25日</dt><dd>奄美群島が日本へ復帰</dd></div>
-    <div class="row"><dt>1954年</dt><dd>奄美群島復興特別措置法が制定。黒糖焼酎の生産も始まる</dd></div>
-    <div class="row"><dt>2017年</dt><dd>奄美群島国立公園が誕生</dd></div>
-    <div class="row"><dt>2021年7月26日</dt><dd>ユネスコ世界自然遺産に登録</dd></div>
+    <div class="row" data-era="amami-yo"><dt>約6000〜5000年前</dt><dd>縄文時代の貝塚文化。ゴホウラ交易の中継点に</dd></div>
+    <div class="row" data-era="amami-yo"><dt>824年</dt><dd>多禰国が大隅国へ移管。本土との公的交流が細る</dd></div>
+    <div class="row" data-era="naha-yo"><dt>1429年</dt><dd>沖永良部島・与論島が琉球王国の領土に</dd></div>
+    <div class="row" data-era="naha-yo"><dt>1447年</dt><dd>奄美大島が琉球王国の統治下に入る</dd></div>
+    <div class="row" data-era="naha-yo"><dt>1466年</dt><dd>尚徳王が喜界島へ親征。奄美群島全域が琉球領に</dd></div>
+    <div class="row" data-era="yamato-yo"><dt>1609年</dt><dd>薩摩藩が琉球へ侵攻</dd></div>
+    <div class="row" data-era="yamato-yo"><dt>1611年</dt><dd>奄美群島が琉球から割譲され、薩摩藩の蔵入地に</dd></div>
+    <div class="row" data-era="yamato-yo"><dt>1695年</dt><dd>製糖監督の「黍検者」が島に派遣される</dd></div>
+    <div class="row" data-era="yamato-yo"><dt>1745年（諸説あり）</dt><dd>換糖上納令。年貢を黒糖で納める制度が始まる</dd></div>
+    <div class="row" data-era="yamato-yo"><dt>1801年</dt><dd>薩摩藩の仮屋が名瀬へ移転</dd></div>
+    <div class="row" data-era="yamato-yo"><dt>1830年</dt><dd>惣買入制。黒糖の私売禁止と藩の独占買上げ（黒糖地獄）</dd></div>
+    <div class="row" data-era="yamato-yo"><dt>1859〜1862年</dt><dd>西郷隆盛が龍郷に潜居。愛加那と結婚</dd></div>
+    <div class="row" data-era="meiji"><dt>1879年</dt><dd>大島郡が置かれ、鹿児島県の行政下に</dd></div>
+    <div class="row" data-era="america-yo"><dt>1946年</dt><dd>北緯30度以南が行政分離。米軍統治が始まる</dd></div>
+    <div class="row" data-era="america-yo"><dt>1951年</dt><dd>日本復帰協議会が結成。泉芳朗の断食祈願</dd></div>
+    <div class="row" data-era="america-yo"><dt>1953年12月25日</dt><dd>奄美群島が日本へ復帰</dd></div>
+    <div class="row" data-era="modern"><dt>1954年</dt><dd>奄美群島復興特別措置法が制定。黒糖焼酎の生産も始まる</dd></div>
+    <div class="row" data-era="modern"><dt>2017年</dt><dd>奄美群島国立公園が誕生</dd></div>
+    <div class="row" data-era="modern"><dt>2021年7月26日</dt><dd>ユネスコ世界自然遺産に登録</dd></div>
   </dl>
+</section>
+
+
+<section class="panel" id="cards">
+  <h2>人物・用語カード</h2>
+  <p>本文に登場する人物と用語の小さな解説です。詳しくは本文の該当章へ。</p>
+  <div class="cards">
+    <div class="card-item"><h3>西郷隆盛</h3><p>安政の大獄で幕府に追われ、1859年1月から1862年1月まで龍郷に潜居。奄美での約3年は生涯でも例外的に穏やかな歳月だったと伝えられます。</p><a href="#yamato-yo">第4章 大和世へ</a></div>
+    <div class="card-item"><h3>愛加那（あいかな）</h3><p>龍郷の龍家の娘。西郷隆盛と結婚し、長男・菊次郎と長女・菊草をもうけました。</p><a href="#yamato-yo">第4章 大和世へ</a></div>
+    <div class="card-item"><h3>泉芳朗（いずみ ほうろう）</h3><p>徳之島出身の詩人。1951年に結成された奄美大島日本復帰協議会の議長を務め、高千穂神社での120時間の断食祈願を行いました。</p><a href="#america-yo">第6章 アメリカ世へ</a></div>
+    <div class="card-item"><h3>ノロ（祝女）</h3><p>集落の祭祀を司る女性。那覇世に王府の公的な制度として奄美にも根づき、精神文化の骨格を形づくりました。</p><a href="#naha-yo">第3章 那覇世へ</a></div>
+    <div class="card-item"><h3>ユタ</h3><p>公的祭祀のノロに対し、民間の祈祷や相談を担った存在。薩摩支配下でも島民の心の支えであり続けました。</p><a href="#yamato-yo">第4章 大和世へ</a></div>
+    <div class="card-item"><h3>結い（ゆい）</h3><p>労働力を融通し合う相互扶助の仕組み。生き抜くための共同体の知恵として、奄美の暮らしを支えました。</p><a href="#yamato-yo">第4章 大和世へ</a></div>
+    <div class="card-item"><h3>惣買入制（そうかいいれせい）</h3><p>1830年に敷かれた黒糖の専売制度。私売は禁じられ、余りの黒糖は藩が安値で独占的に買い上げました。</p><a href="#yamato-yo">第4章 大和世へ</a></div>
+    <div class="card-item"><h3>アメリカ世</h3><p>1945年から1953年の日本復帰まで、米軍統治下に置かれた時代の地元の呼び名です。</p><a href="#america-yo">第6章 アメリカ世へ</a></div>
+  </div>
+</section>
+
+<section class="panel" id="spots">
+  <h2>訪ねられる史跡リスト</h2>
+  <p>本文に登場する場所のうち、現地で辿れる史跡をまとめました。所在地・場所の確認は各リンク先でご確認ください（訪問前には公開状況の確認をおすすめします）。</p>
+  <div class="cards">
+    <div class="card-item"><h3>赤木名城跡</h3><p>奄美市笠利町。按司世に築かれた城（グスク）の跡で、国の史跡に指定されています。本文：第2章。</p><a href="https://ja.wikipedia.org/wiki/%E8%B5%A4%E6%9C%A8%E5%90%8D%E5%9F%8E" rel="noopener">場所・座標を確認（Wikipedia）</a></div>
+    <div class="card-item"><h3>西郷南洲流謫跡</h3><p>大島郡龍郷町龍郷。西郷隆盛が1861年に自ら設計し移り住んだ新居の跡地です。本文：第4章。</p><a href="https://www.navitime.co.jp/poi?spot=02301-14401748&amp;name=西郷南洲流謫跡&amp;category=その他の史跡/建造物&amp;LCode=0705008001" rel="noopener">地図・アクセスを確認（NAVITIME）</a></div>
+    <div class="card-item"><h3>おがみ山公園（復帰記念碑・泉芳朗像）</h3><p>奄美市名瀬。復帰記念碑と泉芳朗の胸像・詩碑が立ちます。本文：第6章。</p><a href="https://www.pref.kagoshima.jp/suisuinavi/1326.html" rel="noopener">所在地を確認（鹿児島県公式）</a></div>
+    <div class="card-item"><h3>高千穂神社</h3><p>奄美市名瀬井根町。1951年、泉芳朗が120時間の断食祈願を行った神社です。本文：第6章。</p><a href="https://www.mapion.co.jp/phonebook/M06005/46222/L0706599/" rel="noopener">住所・地図を確認（マピオン）</a></div>
+    <div class="card-item"><h3>百之台</h3><p>喜界島。全島の按司たちが集まって会議を開いた場所と伝えられます。本文：第2章。</p><a href="#aji-yo">第2章 按司世へ</a></div>
+  </div>
+</section>
+
+<section class="panel" id="islands">
+  <h2>島別に読む（入口）</h2>
+  <p>奄美群島の島ごとのページへの分割は今後の課題です。現時点では、本編の中で各島に触れた記述への入口をまとめました。</p>
+  <div class="cards">
+    <div class="card-item"><h3>奄美大島</h3><p>本編全体の舞台。貝の交易、黒糖、復帰運動、世界自然遺産までを通史でたどります。</p><a href="#amami-yo">第1章から読む</a></div>
+    <div class="card-item"><h3>喜界島</h3><p>按司たちが集まった百之台の伝承と、琉球編入で最後まで抗戦した島の物語。</p><a href="#naha-yo">第3章 那覇世へ</a></div>
+    <div class="card-item"><h3>徳之島</h3><p>復帰運動を率いた泉芳朗の出身地であり、西郷隆盛の遠島先の一つ。2021年には奄美大島とともに世界自然遺産に登録されました。</p><a href="#america-yo">第6章 アメリカ世へ</a></div>
+    <div class="card-item"><h3>沖永良部島・与論島</h3><p>1429年、奄美群島の中で最初に琉球王国の領土となった島々。沖永良部島は西郷の再遠島先でもあります。</p><a href="#naha-yo">第3章 那覇世へ</a></div>
+  </div>
 </section>
 
 <section class="faq" id="faq">
@@ -247,6 +343,10 @@
   <p>1609年に薩摩藩が琉球へ侵攻し、1611年に奄美群島は琉球から割譲されて薩摩藩の領土（蔵入地）となりました。以後約260年間、表向きは琉球、実質は薩摩という二重の帰属が続きました。</p>
   <h3>奄美大島が世界自然遺産に登録されたのはいつですか？</h3>
   <p>2021年7月26日です。奄美大島と徳之島が、沖縄島北部・西表島とともにユネスコの世界自然遺産に登録されました。アマミノクロウサギに代表される固有種の豊かな生物相が評価されました。</p>
+  <h3>「アメリカ世」とは何ですか？</h3>
+  <p>第二次世界大戦後、1945年から1953年の日本復帰まで、奄美群島が米軍統治下に置かれた時代を指す地元の呼び名です。本土との往来は断たれ、通貨はB円となりました。島民の復帰運動を経て、1953年12月25日に日本へ復帰しました。</p>
+  <h3>奄美大島の日本復帰はなぜ12月25日だったのですか？</h3>
+  <p>1953年8月8日、来日したダレス米国務長官が奄美群島の返還声明を発表し、同年12月25日午前0時、奄美群島は正式に日本へ復帰しました。クリスマスの日に帰ってきた島々――この日は今も奄美で最も大切な記念日の一つです。</p>
 </section>
 
 <section class="faq" id="sources">
@@ -262,6 +362,7 @@
   <p>奄美大島の歴史 ― 那覇世・大和世を生きた島の五千年</p>
   <p>太郎JAPAN</p>
   <p>お問い合わせ：<a href="mailto:ponponkonkon4@gmail.com">ponponkonkon4@gmail.com</a></p>
+  <p>最終更新日：2026年11月18日</p>
 </footer>
 
 <script>
@@ -269,11 +370,16 @@
   var selects=[document.getElementById('eraSelectNav'),document.getElementById('eraSelectMain')].filter(Boolean);
   var status=document.getElementById('eraFilterStatus');
   var labels={'':'すべての時代','amami-yo':'奄美世','aji-yo':'按司世','naha-yo':'那覇世','yamato-yo':'大和世','america-yo':'アメリカ世'};
+  var tlStatus=document.getElementById('timelineFilterStatus');
   function apply(value,scroll){
     selects.forEach(function(s){s.value=value;});
     document.querySelectorAll('section.era').forEach(function(sec){
       sec.hidden = !!value && sec.id!==value;
     });
+    document.querySelectorAll('.timeline .row').forEach(function(row){
+      row.hidden = !!value && row.getAttribute('data-era')!==value;
+    });
+    if(tlStatus){tlStatus.textContent = value ? '年表は現在：'+(labels[value]||value)+'の出来事だけを表示しています' : '上のプルダウンで「〇〇世」を選ぶと、年表もその時代の出来事だけに絞り込まれます。';}
     if(status){status.textContent = value ? '現在：'+(labels[value]||value)+'のみを表示しています（他の章は隠れています）' : '現在：すべての時代を表示しています';}
     if(value && scroll){
       var el=document.getElementById(value);
@@ -284,6 +390,28 @@
   document.querySelectorAll('nav.eras a[href^="#"]').forEach(function(a){
     a.addEventListener('click',function(){apply('',false);});
   });
+  document.querySelectorAll('.panel a[href^="#"], .timeline a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(){apply('',false);});
+  });
+  document.querySelectorAll('.theme-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      var era=b.getAttribute('data-theme-era');
+      if(era){apply(era,true);return;}
+      var target=b.getAttribute('data-theme-target');
+      apply('',false);
+      var el=target&&document.getElementById(target);
+      if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+  var bar=document.getElementById('readingProgress');
+  function onScroll(){
+    if(!bar){return;}
+    var doc=document.documentElement;
+    var max=doc.scrollHeight-doc.clientHeight;
+    bar.style.width=(max>0?(doc.scrollTop/max)*100:0)+'%';
+  }
+  document.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
 })();
 </script>
 </body>
