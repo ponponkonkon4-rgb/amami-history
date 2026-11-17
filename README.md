@@ -6,6 +6,7 @@
 - 運営名: 太郎JAPAN
 - お問い合わせ: ponponkonkon4@gmail.com
 - `index.html` — 本編（年表・FAQ・参考資料つき）
+- `history-overview.svg` — 通史を1枚で示すイメージ図（五つの「〇〇世」と帰属の流れ）
 - `ogp.svg` — SNSシェア用のOGP画像
 - `sitemap.xml` / `robots.txt` — 検索エンジン向け設定
 

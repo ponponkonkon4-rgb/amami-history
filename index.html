@@ -147,6 +147,10 @@
   .timeline-status{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13px;color:var(--accent)}
   .theme-btn{cursor:pointer;text-align:left;font:inherit;width:100%}
   .theme-btn:hover{border-color:var(--sea)}
+  .overview-figure{margin:0}
+  .overview-figure img{display:block;width:100%;height:auto;border:1px solid var(--sand);border-radius:8px;background:#fbf9f4}
+  .overview-figure figcaption{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:13.5px;color:var(--ink-soft);margin-top:10px;line-height:1.8}
+  .overview-figure figcaption a{font-size:13.5px}
 </style>
 </head>
 <body>
@@ -171,6 +175,7 @@
       <option value="america-yo">アメリカ世</option>
     </select>
   </label>
+  <a href="#overview">イメージ図</a>
   <a href="#meiji">明治〜敗戦</a>
   <a href="#modern">復帰〜現代</a>
   <a href="#identity">奄美の心</a>
@@ -198,6 +203,15 @@
   </label>
   <p class="filter-status" id="eraFilterStatus" aria-live="polite">現在：すべての時代を表示しています</p>
 </div>
+
+<section class="panel" id="overview">
+  <h2>イメージ図 ― 五つの「〇〇世」でたどる五千年</h2>
+  <p>奄美大島の通史を1枚にまとめた図解です。時代ごとに「帰属」と代表的な出来事を示しました。帰属が変わるたびに島の暮らしも変わりましたが、結い・島唄・大島紬に代表される島の文化は受け継がれてきました。</p>
+  <figure class="overview-figure">
+    <img src="history-overview.svg" alt="奄美大島の歴史イメージ図：奄美世（貝交易・共同体）、按司世（首長・グスク）、那覇世（琉球王国への編入）、大和世（薩摩支配と黒糖専売、西郷隆盛の龍郷潜居）、明治〜敗戦（鹿児島県）、アメリカ世（米軍統治と1953年12月25日の日本復帰）、復帰〜現代（世界自然遺産）までを縦の年表で示した図" width="1000" height="1560" loading="lazy">
+    <figcaption>図：奄美世から現代までの流れ。内容は本サイト本文に基づきます。画像だけを大きく見る場合は <a href="history-overview.svg">イメージ図（SVG）を開く</a> からご覧ください。</figcaption>
+  </figure>
+</section>
 
 <section class="panel" id="themes">
   <h2>テーマ別に読む</h2>

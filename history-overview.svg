@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1560" viewBox="0 0 1000 1560" role="img" aria-labelledby="title desc">
+<title id="title">奄美大島の歴史 イメージ図 ― 五つの「〇〇世」でたどる五千年</title>
+<desc id="desc">奄美世から現代まで、時代ごとの帰属と出来事を縦の年表で示した図解。奄美世は共同体と貝交易、按司世は首長とグスク、那覇世は琉球王国への編入、大和世は薩摩支配と黒糖専売、明治以降は鹿児島県、アメリカ世は米軍統治と1953年の日本復帰、現代は世界自然遺産登録までを表す。</desc>
+<rect width="1000" height="1560" fill="#fbf9f4"/>
+<rect x="0" y="0" width="1000" height="170" fill="#083f4d"/>
+<path d="M0 150 Q 125 130 250 150 T 500 150 T 750 150 T 1000 150" fill="none" stroke="#b7791f" stroke-width="4"/>
+<text x="500" y="72" text-anchor="middle" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="44" font-weight="bold" fill="#fdfcf8">奄美大島の歴史 イメージ図</text>
+<text x="500" y="118" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="25" fill="#cfe3dd">五つの「〇〇世」でたどる五千年 ― 帰属が変わっても、島は島であり続けた</text>
+<line x1="110" y1="230" x2="110" y2="1360" stroke="#0d5c63" stroke-width="6"/>
+<rect x="170" y="210" width="760" height="150" rx="12" fill="#ffffff" stroke="#ddd3bd" stroke-width="2"/>
+<rect x="170" y="210" width="10" height="150" fill="#5a8a72"/>
+<circle cx="110" cy="285" r="22" fill="#5a8a72"/>
+<text x="110" y="293" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="bold" fill="#ffffff">1</text>
+<text x="205" y="265" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="36" font-weight="bold" fill="#083f4d">奄美世</text>
+<text x="905" y="265" text-anchor="end" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" fill="#b7791f">先史〜9世紀ごろ</text>
+<text x="205" y="305" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#43536a">帰属：島々の共同体</text>
+<text x="205" y="340" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#1d2733">貝（ゴホウラ）交易の中継点 ／ 御嶽と集落（シマ）</text>
+<rect x="170" y="380" width="760" height="150" rx="12" fill="#ffffff" stroke="#ddd3bd" stroke-width="2"/>
+<rect x="170" y="380" width="10" height="150" fill="#0d5c63"/>
+<circle cx="110" cy="455" r="22" fill="#0d5c63"/>
+<text x="110" y="463" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="bold" fill="#ffffff">2</text>
+<text x="205" y="435" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="36" font-weight="bold" fill="#083f4d">按司世</text>
+<text x="905" y="435" text-anchor="end" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" fill="#b7791f">9世紀ごろ〜15世紀</text>
+<text x="205" y="475" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#43536a">帰属：在地の首長・按司</text>
+<text x="205" y="510" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#1d2733">グスクの時代 ／ 赤木名城跡・百之台</text>
+<rect x="170" y="550" width="760" height="150" rx="12" fill="#ffffff" stroke="#ddd3bd" stroke-width="2"/>
+<rect x="170" y="550" width="10" height="150" fill="#2a7a9b"/>
+<circle cx="110" cy="625" r="22" fill="#2a7a9b"/>
+<text x="110" y="633" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="bold" fill="#ffffff">3</text>
+<text x="205" y="605" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="36" font-weight="bold" fill="#083f4d">那覇世</text>
+<text x="905" y="605" text-anchor="end" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" fill="#b7791f">1429〜1609年</text>
+<text x="205" y="645" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#43536a">帰属：琉球王国</text>
+<text x="205" y="680" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#1d2733">段階的に編入 ／ 間切の間接支配・ノロの制度</text>
+<rect x="170" y="720" width="760" height="150" rx="12" fill="#ffffff" stroke="#ddd3bd" stroke-width="2"/>
+<rect x="170" y="720" width="10" height="150" fill="#b7791f"/>
+<circle cx="110" cy="795" r="22" fill="#b7791f"/>
+<text x="110" y="803" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="bold" fill="#ffffff">4</text>
+<text x="205" y="775" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="36" font-weight="bold" fill="#083f4d">大和世</text>
+<text x="905" y="775" text-anchor="end" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" fill="#b7791f">1609〜1868年</text>
+<text x="205" y="815" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#43536a">帰属：薩摩藩（表向き琉球・実質薩摩）</text>
+<text x="205" y="850" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#1d2733">黒糖専売と惣買入制 ／ 西郷隆盛の龍郷潜居</text>
+<rect x="170" y="890" width="760" height="150" rx="12" fill="#ffffff" stroke="#ddd3bd" stroke-width="2"/>
+<rect x="170" y="890" width="10" height="150" fill="#43536a"/>
+<circle cx="110" cy="965" r="22" fill="#43536a"/>
+<text x="110" y="973" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="bold" fill="#ffffff">5</text>
+<text x="205" y="945" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="36" font-weight="bold" fill="#083f4d">明治〜敗戦</text>
+<text x="905" y="945" text-anchor="end" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" fill="#b7791f">1868〜1945年</text>
+<text x="205" y="985" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#43536a">帰属：鹿児島県（日本）</text>
+<text x="205" y="1020" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#1d2733">1879年 大島郡設置 ／ 専売は大島商社へ継承</text>
+<rect x="170" y="1060" width="760" height="150" rx="12" fill="#ffffff" stroke="#ddd3bd" stroke-width="2"/>
+<rect x="170" y="1060" width="10" height="150" fill="#8c5a2b"/>
+<circle cx="110" cy="1135" r="22" fill="#8c5a2b"/>
+<text x="110" y="1143" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="bold" fill="#ffffff">6</text>
+<text x="205" y="1115" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="36" font-weight="bold" fill="#083f4d">アメリカ世</text>
+<text x="905" y="1115" text-anchor="end" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" fill="#b7791f">1945〜1953年</text>
+<text x="205" y="1155" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#43536a">帰属：米軍統治</text>
+<text x="205" y="1190" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#1d2733">99.8％の署名と断食祈願 ／ 1953.12.25 日本復帰</text>
+<rect x="170" y="1230" width="760" height="150" rx="12" fill="#ffffff" stroke="#ddd3bd" stroke-width="2"/>
+<rect x="170" y="1230" width="10" height="150" fill="#0d5c63"/>
+<circle cx="110" cy="1305" r="22" fill="#0d5c63"/>
+<text x="110" y="1313" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="bold" fill="#ffffff">7</text>
+<text x="205" y="1285" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="36" font-weight="bold" fill="#083f4d">復帰〜現代</text>
+<text x="905" y="1285" text-anchor="end" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" fill="#b7791f">1954年〜</text>
+<text x="205" y="1325" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#43536a">帰属：日本</text>
+<text x="205" y="1360" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="23" fill="#1d2733">復興特別措置法・黒糖焼酎 ／ 2021年 世界自然遺産</text>
+<rect x="40" y="1400" width="920" height="120" rx="12" fill="#0d5c63"/>
+<text x="500" y="1452" text-anchor="middle" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="30" font-weight="bold" fill="#fdfcf8">結い・島唄・大島紬 ― 境界に生きる、しなやかな強さ</text>
+<text x="500" y="1492" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic',sans-serif" font-size="20" fill="#cfe3dd">内容は本サイト本文に基づきます ／ 運営：太郎JAPAN</text>
+</svg>
