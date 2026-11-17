@@ -9,6 +9,7 @@
 - `history-overview.svg` — 通史を1枚で示すイメージ図（五つの「〇〇世」と帰属の流れ）
 - `sugar-flow.svg` — 第4章の図解（黒糖専売の仕組み：生産→藩の独占買上げ→大阪の問屋→財政再建／島民への羽書）
 - `return-movement.svg` — 第6章の図解（復帰運動：99.8%の署名ドーナツ図と1946年〜1953年12月25日の年表）
+- `fig-amami-yo.svg` / `fig-aji-yo.svg` / `fig-naha-yo.svg` / `fig-meiji.svg` / `fig-modern.svg` / `fig-identity.svg` — 各章の小さな図解（第1・2・3・5・7章と終章）。全章に図解を配置し、各ファイルは約3KBの軽量SVGで遅延読み込み
 - `ogp.svg` — SNSシェア用のOGP画像
 - `sitemap.xml` / `robots.txt` — 検索エンジン向け設定
 
